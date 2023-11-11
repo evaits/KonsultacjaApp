@@ -1,0 +1,187 @@
+.container {
+    width: calc(100vw - 60px);
+    margin: auto;    
+}
+
+/* Search form */
+.searchBox {
+    margin-top: 79px;
+    background: white;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.searchBox:hover > .searchButton {
+  background: #2f3640;
+}
+
+.search_icon {
+    fill: #2f3640;
+    transition: fill .3s linear;
+}
+
+.searchBox:hover .search_icon {
+    fill: white;
+}
+
+.searchButton {
+    color: #2f3640;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 33px;
+    width: calc(100% - 80px);
+    padding: 0 6px;
+
+}
+
+/* Teacher list */
+
+.teacher_list {
+    overflow-y: auto;
+    height: calc(100vh - 280px);
+    margin-bottom: 50px;
+}
+
+.list_item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.teacher_name{
+    display: flex;
+    width: 200px;
+    color: #222B45;
+    font-family: SF UI Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; 
+    letter-spacing: 1px;
+}
+
+.teacher_name img {
+    width: 14px;
+    height: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+.aplikuj_btn {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #735BF2;
+    color: white;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    transition: background .4s ease;
+}
+
+.aplikuj_btn:hover {
+    background-color: #5f4cc0;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100vw - 90px);
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.footer_link {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 96.3%;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer_link img {
+    margin-bottom: 8px;
+}
+
+.add_icon {
+    position: absolute;
+    width: 60px;
+    height: 68px;
+    left: calc(50% - 30px);
+    top: -35px;
+}
+
+#add_circle {
+    transition: fill .3s linear;
+}
+
+.add:hover #add_circle,
+.add:active #add_circle {
+    fill: #5f4cc0;
+}
+
+.footer_circle {
+    position: absolute;
+    -webkit-box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.10) inset;
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10) inset;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10) inset;
+    z-index: -10;
+    left: calc(50% - 30px);
+    top: 0px;
+}
+
+/* Adaptation */
+
+@media screen and (max-width: 420px) {
+    .teacher_name {
+        font-size: 17px;
+    }
+
+    .aplikuj_btn {
+        width: 70px;
+        height: 27px;
+        padding: 5px, 15px;
+    }
+}
