@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/hourCheck.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/sf-ui-text-2" rel="stylesheet">
+<body>
+
+    <main>
+        <div class="calendar_wrapper">
+            <header>
+                <svg class="arrow" id="prev" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0613 16.1401C12.0613 15.91 12.1578 15.6799 12.3504 15.5045L18.4137 9.98408C18.7994 9.63291 19.4248 9.63291 19.8104 9.98408C20.1959 10.3351 20.1959 10.9044 19.8104 11.2556L14.4452 16.1401L19.8102 21.0247C20.1957 21.3758 20.1957 21.945 19.8102 22.296C19.4246 22.6474 18.7993 22.6474 18.4136 22.296L12.3502 16.7757C12.1576 16.6002 12.0613 16.3701 12.0613 16.1401Z" fill="#222B45"/>
+                </svg>
+                
+                <p class="current-date">November <br> <span>2023</span></p>
+
+                <svg class="arrow" id="next" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0613 16.1401C12.0613 15.91 12.1578 15.6799 12.3504 15.5045L18.4137 9.98408C18.7994 9.63291 19.4248 9.63291 19.8104 9.98408C20.1959 10.3351 20.1959 10.9044 19.8104 11.2556L14.4452 16.1401L19.8102 21.0247C20.1957 21.3758 20.1957 21.945 19.8102 22.296C19.4246 22.6474 18.7993 22.6474 18.4136 22.296L12.3502 16.7757C12.1576 16.6002 12.0613 16.3701 12.0613 16.1401Z" fill="#222B45"/>
+                </svg>
+            </header>
+            <div class="calendar">
+                <ul class="weeks">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
+              </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a class="footer_link"  href="#">
+            <img src="../assets/images/watch.svg" alt="hours">
+            <p>Your hours</p>
+        </a>
+        <a class="add" href="views/hourCheck.html">
+            <svg display="none">
+                <symbol x="-5px" y="-30px" height="140px" viewBox="0 0 90 125" xml:space="preserve" id="add">
+                    <path id="add_circle" d="M50,11.5c-21.2,0-38.5,17.3-38.5,38.5S28.8,88.5,50,88.5S88.5,71.2,88.5,50S71.2,11.5,50,11.5z M67,53H52v14  c0,1.4-1.1,2.5-2.5,2.5S47,68.4,47,67V53H33c-1.4,0-2.5-1.1-2.5-2.5S31.6,48,33,48h14V33c0-1.4,1.1-2.5,2.5-2.5S52,31.6,52,33v15h15  c1.4,0,2.5,1.1,2.5,2.5S68.4,53,67,53z"/>
+                </symbol>
+            </svg>
+
+            <svg class="add_icon">
+                <use xlink:href="#add"></use>
+            </svg>
+        </a>
+        <a class="footer_link" href="#">
+            <img src="../assets/images/profile.svg" alt="profile">
+            <p>Profile</p>
+        </a>
+    </footer>
+
+    
+    <script src="../assets/scripts/calendar.js"></script>
+</body>
+</html>
