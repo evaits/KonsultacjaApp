@@ -12,33 +12,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 
     <link href="https://fonts.cdnfonts.com/css/sf-ui-text-2" rel="stylesheet">
+    <title>Hours</title>
 <body>
 
     <main>
-        <div class="calendar_wrapper">
-            <header>
-                <svg class="arrow" id="prev" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.0613 16.1401C12.0613 15.91 12.1578 15.6799 12.3504 15.5045L18.4137 9.98408C18.7994 9.63291 19.4248 9.63291 19.8104 9.98408C20.1959 10.3351 20.1959 10.9044 19.8104 11.2556L14.4452 16.1401L19.8102 21.0247C20.1957 21.3758 20.1957 21.945 19.8102 22.296C19.4246 22.6474 18.7993 22.6474 18.4136 22.296L12.3502 16.7757C12.1576 16.6002 12.0613 16.3701 12.0613 16.1401Z" fill="#222B45"/>
-                </svg>
+        <div class="wrapper">
+            <div class="calendar_wrapper">
+                <header>
+                    <svg class="arrow" id="prev" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0613 16.1401C12.0613 15.91 12.1578 15.6799 12.3504 15.5045L18.4137 9.98408C18.7994 9.63291 19.4248 9.63291 19.8104 9.98408C20.1959 10.3351 20.1959 10.9044 19.8104 11.2556L14.4452 16.1401L19.8102 21.0247C20.1957 21.3758 20.1957 21.945 19.8102 22.296C19.4246 22.6474 18.7993 22.6474 18.4136 22.296L12.3502 16.7757C12.1576 16.6002 12.0613 16.3701 12.0613 16.1401Z" fill="#222B45"/>
+                    </svg>
+                    
+                    <h2 class="current-date">November 2023</h2>
+    
+                    <svg class="arrow" id="next" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0613 16.1401C12.0613 15.91 12.1578 15.6799 12.3504 15.5045L18.4137 9.98408C18.7994 9.63291 19.4248 9.63291 19.8104 9.98408C20.1959 10.3351 20.1959 10.9044 19.8104 11.2556L14.4452 16.1401L19.8102 21.0247C20.1957 21.3758 20.1957 21.945 19.8102 22.296C19.4246 22.6474 18.7993 22.6474 18.4136 22.296L12.3502 16.7757C12.1576 16.6002 12.0613 16.3701 12.0613 16.1401Z" fill="#222B45"/>
+                    </svg>
+                </header>
                 
-                <p class="current-date">November <br> <span>2023</span></p>
+                <div class="calendar">
+                    <ul class="weeks">
+                      <li>Sun</li>
+                      <li>Mon</li>
+                      <li>Tue</li>
+                      <li>Wed</li>
+                      <li>Thu</li>
+                      <li>Fri</li>
+                      <li>Sat</li>
+                    </ul>
+                    <ul class="days"></ul>
+                </div>
+            </div>
 
-                <svg class="arrow" id="next" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.0613 16.1401C12.0613 15.91 12.1578 15.6799 12.3504 15.5045L18.4137 9.98408C18.7994 9.63291 19.4248 9.63291 19.8104 9.98408C20.1959 10.3351 20.1959 10.9044 19.8104 11.2556L14.4452 16.1401L19.8102 21.0247C20.1957 21.3758 20.1957 21.945 19.8102 22.296C19.4246 22.6474 18.7993 22.6474 18.4136 22.296L12.3502 16.7757C12.1576 16.6002 12.0613 16.3701 12.0613 16.1401Z" fill="#222B45"/>
-                </svg>
-            </header>
-            <div class="calendar">
-                <ul class="weeks">
-                  <li>Sun</li>
-                  <li>Mon</li>
-                  <li>Tue</li>
-                  <li>Wed</li>
-                  <li>Thu</li>
-                  <li>Fri</li>
-                  <li>Sat</li>
-                </ul>
-                <ul class="days"></ul>
-              </div>
+            <div class="line"></div>
+
+            <ul class="hours_list">
+                <li class="hours_list_item">
+                    <div class="header_list_item">
+                        <div class="time">
+                            <svg height="13" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 5">
+                                    <path id="Oval Copy 2" fill-rule="evenodd" clip-rule="evenodd" d="M4.89642 2.82486C3.75416 2.82486 2.82486 3.75417 2.82486 4.89642C2.82486 6.03868 3.75417 6.96798 4.89642 6.96798C6.03868 6.96798 6.96798 6.03867 6.96798 4.89642C6.96798 3.75416 6.03867 2.82486 4.89642 2.82486ZM4.89642 0C7.60064 0 9.79284 2.19221 9.79284 4.89642C9.79284 7.60064 7.60063 9.79284 4.89642 9.79284C2.19221 9.79284 0 7.60063 0 4.89642C0 2.19221 2.19221 0 4.89642 0Z" fill="#0095FF"/>
+                                </g>
+                            </svg>
+
+                            14:20
+                        </div>
+                        <div class="circles_group">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="teacher_name">
+                        Jarosław Garbowski
+                    </div>
+                    <div class="subject">
+                        Witryny i Aplikacje | 34 sala
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal">
+            <h2 class="modal_title">
+                Nowe zgłoszenie
+            </h2>
+            <form class="form" id="form" action="">
+                <div class="form-group">
+                    <span class="form-arrow"><i class="bx bx-chevron-down"></i></span>
+                    <select required name="type" id="type" class="dropdown ">
+                        <option value="kartkowka">Kartkówka</option>
+                        <option value="sprawdzian">Sprawdzian</option>
+                        <option value="pisanie zaleglej pracy">Pisanie Zaleglej Pracy</option>
+                    </select>
+                </div>
+                <textarea required name="theme" placeholder="Napisz temat oraz dodatkową informacje" id="theme"></textarea>
+                <div class="info">
+                    <div class="content_info">
+                        <div class="info_text">
+                            02.09
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                            <rect x="1" y="2.79999" width="16" height="16.2" rx="2" stroke="#8F9BB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.556 1V4.6" stroke="#8F9BB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.444 1V4.6" stroke="#8F9BB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 8.20001H17" stroke="#8F9BB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                    <div class="content_info">
+                        <div class="info_text">
+                            14:20
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="9" stroke="#8F9BB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5558 4.60001V10L14.1558 11.8" stroke="#8F9BB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <button class="modal_btn">Create Event</button>
+            </form>
         </div>
     </main>
 
@@ -65,6 +137,6 @@
     </footer>
 
     
-    <script src="../assets/scripts/calendar.js"></script>
+    <script src="../assets/scripts/hourChoose.js"></script>
 </body>
 </html>
