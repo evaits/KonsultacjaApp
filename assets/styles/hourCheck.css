@@ -6,7 +6,7 @@ body {
 
 /* Main */
 main {
-    height: calc(100dvh - 62px);
+    height: calc(100dvh - 65px);
 }
 
 .wrapper {
@@ -142,7 +142,7 @@ header span {
 
 /* Hour list */
 .hours_list {
-    margin-top: 42px;
+    margin-top: 32px;
     padding-top: 18px;
     padding-left: 14px;
     padding-right: 14px;
@@ -433,8 +433,10 @@ header span {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    background-color: white;
+    z-index: 999;
 }
 
 .footer_link {
@@ -471,4 +473,71 @@ header span {
 .add:hover #add_circle,
 .add:active #add_circle {
     fill: #5f4cc0;
+}
+
+@media screen and (max-height: 670px) {
+    .hours_list {
+        margin-top: 10px;
+    }
+    .time {
+        font-size: 15px;
+    }
+
+    .time svg {
+        height: 10px;
+    }
+
+    .teacher_name {
+        font-size: 17px;
+    }
+    
+    .subject {
+        font-size: 12px;
+    }
+    .calendar {
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .calendar .days li {
+        line-height: 5px;
+    }
+
+    .days li::before {
+        height: 30px;
+        width: 30px;
+    }
+
+    .calendar_wrapper header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-height: 515px) {
+    .hours_list {
+        margin-top: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .add_icon {
+        width: 55px;
+        height: 58px;
+        left: calc(50% - 22px);
+        top: -25px;
+    }
+
+    main {
+        height: calc(100dvh - 58px);
+    }
+
+    .footer_link {
+        font-size: 9px;
+    }
+
+    .footer_link img{
+        height: 18px;
+    }
 }
